@@ -1,10 +1,9 @@
 import discord
+from discordToken import get_token
 from discord.ext.commands import Bot
 from functions import call_out_for_muting, check_game
 
-
-
-TOKEN = 'ODE1NzUzNTc2MTYwMTY1OTA4.YDw_uA.G7RqZFSkbJ9RlMS5P3VKEP0RWjY'
+TOKEN = get_token()
 
 intents = discord.Intents.default()
 intents.voice_states = True
